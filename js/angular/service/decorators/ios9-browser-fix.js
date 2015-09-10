@@ -2,7 +2,7 @@
 // iOS9 Patch for $browser
 // https://github.com/angular/angular.js/issues/12241#issuecomment-130744518
 
-angular.module('ionic').config(['$provide', function($provide) {
+angular.module('ng').config(['$provide', function($provide) {
   $provide.decorator('$browser', ['$delegate', '$window', '$document', '$log', '$sniffer', function($browser, window, document, $log, $sniffer) {
 
 
