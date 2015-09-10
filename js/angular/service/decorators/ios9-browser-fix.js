@@ -7,11 +7,14 @@ angular.module('ionic').config(['$provide', function($provide) {
 
 
   // only provide the patch for iOS9 on UIWebView
-  var isIOS9 = (navigator.userAgent.indexOf('Version/9.') != -1) && ((navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/) === "OS 9_0");
+  var isIOS9 = (navigator.userAgent.indexOf('Version/9.') != -1) && (navigator.appVersion.indexOf('9_0') != -1);
   if (false) {
     // do not patch if not iOS9 UIWebView
     return $browser;
   }
+
+
+  console.log('iOS9 $browser patch applied');
 
 
   // private methods not public within angular
@@ -180,7 +183,7 @@ angular.module('ionic').config(['$provide', function($provide) {
     if (!pendingHrefTimer && pendingHref && url) {
       pendingHrefTimer = setTimeout(function () {
         if (location.href == pendingHref) {
-          console.log('Actual href updated... setting pendingHref to null from setTimeout');
+          //console.log('Actual href updated... setting pendingHref to null from setTimeout');
           pendingHref = null;
         }
         pendingHrefTimer = null;
@@ -213,6 +216,11 @@ angular.module('ionic').config(['$provide', function($provide) {
         // Do the assignment again so that those two variables are referentially identical.
         lastHistoryState = cachedState;
       } else {
+
+
+        pendingHref = url;   // PATCH 4 ********************
+
+
         if (!sameBase) {
           reloadLocation = url;
         }
@@ -228,7 +236,9 @@ angular.module('ionic').config(['$provide', function($provide) {
     // getter
     } else {
 
-      // ******************** START PATCH 4 ********************
+
+
+      // ******************** START PATCH 5 ********************
       var href = location.href.replace(/%27/g, "'");
       if (pendingHref) {
         //console.log('.. using pendingHref for url() return value');
@@ -236,10 +246,10 @@ angular.module('ionic').config(['$provide', function($provide) {
       }
 
       if (location.href == pendingHref) {
-        console.log('Actual href updated... setting pendingHref to null in getter');
+        //console.log('Actual href updated... setting pendingHref to null in getter');
         pendingHref = null;
       }
-      // ******************** END PATCH 4 ********************
+      // ******************** END PATCH 5 ********************
 
 
       // - reloadLocation is needed as browsers don't allow to read out
