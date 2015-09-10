@@ -337,9 +337,9 @@ angular.module('ionic').config(['$provide', function($provide) {
       // changed by push/replaceState
 
       // html5 history api - popstate event
-      if ($sniffer.history) jqLite(window).on('popstate', cacheStateAndFireUrlChange);
+      if ($sniffer.history) angular.element(window).on('popstate', cacheStateAndFireUrlChange);
       // hashchange event
-      jqLite(window).on('hashchange', cacheStateAndFireUrlChange);
+      angular.element(window).on('hashchange', cacheStateAndFireUrlChange);
 
       urlChangeInit = true;
     }
@@ -496,7 +496,7 @@ angular.module('ionic').config(['$provide', function($provide) {
     if (pendingDeferIds[deferId]) {
       delete pendingDeferIds[deferId];
       clearTimeout(deferId);
-      completeOutstandingRequest(noop);
+      completeOutstandingRequest(angular.noop);
       return true;
     }
     return false;
