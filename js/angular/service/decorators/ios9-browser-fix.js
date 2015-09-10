@@ -7,11 +7,11 @@ angular.module('ionic').config(['$provide', function($provide) {
 
 
   // only provide the patch for iOS9 on UIWebView
-  var isIOS9 = (navigator.userAgent.indexOf('Version/9.') != -1) && (navigator.appVersion.indexOf('9_0') != -1);
-  if (false) {
-    // do not patch if not iOS9 UIWebView
-    return $browser;
-  }
+  // var isIOS9 = (navigator.userAgent.indexOf('Version/9.') != -1) && (navigator.appVersion.indexOf('9_0') != -1);
+  // if (false) {
+  //   // do not patch if not iOS9 UIWebView
+  //   return $browser;
+  // }
 
 
   console.log('iOS9 $browser patch applied');
@@ -181,7 +181,7 @@ angular.module('ionic').config(['$provide', function($provide) {
     // Schedule cleaning up pendingHref on the next run loop for setting URL. This is to handle
     // the case where the browser doesn't update the location.* properties immediately
     if (!pendingHrefTimer && pendingHref && url) {
-      pendingHrefTimer = setTimeout(function () {
+      pendingHrefTimer = setTimeout(function() {
         if (location.href == pendingHref) {
           //console.log('Actual href updated... setting pendingHref to null from setTimeout');
           pendingHref = null;
