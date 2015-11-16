@@ -6057,8 +6057,8 @@ a.item-content {
   position: absolute;
   top: 8px;
   left: 11px;
-  min-width: 34px;
-  min-height: 34px;
+  min-width: 32px;
+  min-height: 32px;
   font-size: 18px;
   line-height: 32px; }
   .item-button-left > .button .icon:before,
@@ -6070,7 +6070,7 @@ a.item-content {
   .item-button-left > .button > .button,
   .item-button-left .item-content > .button > .button {
     margin: 0px 2px;
-    min-height: 34px;
+    min-height: 32px;
     font-size: 18px;
     line-height: 32px; }
 
@@ -6097,8 +6097,8 @@ button.item.item-button-right {
   position: absolute;
   top: 8px;
   right: 16px;
-  min-width: 34px;
-  min-height: 34px;
+  min-width: 32px;
+  min-height: 32px;
   font-size: 18px;
   line-height: 32px; }
   .item-button-right > .button .icon:before,
@@ -6114,8 +6114,8 @@ button.item.item-button-right {
   .item-button-right > .buttons > .button,
   .item-button-right .item-content > .buttons > .button {
     margin: 0px 2px;
-    min-width: 34px;
-    min-height: 34px;
+    min-width: 32px;
+    min-height: 32px;
     font-size: 18px;
     line-height: 32px; }
 
@@ -7882,14 +7882,14 @@ progress {
   padding: 0 12px;
   min-width: 52px;
   min-height: 47px;
-  border-width: 1px;
+  border-width: 0px;
   border-style: solid;
-  border-radius: 2px;
+  border-radius: 4px;
   vertical-align: top;
   text-align: center;
   text-overflow: ellipsis;
   font-size: 16px;
-  line-height: 42px;
+  line-height: 43px;
   cursor: pointer; }
   .button:hover {
     color: #444;
@@ -7910,10 +7910,10 @@ progress {
     pointer-events: none; }
   .button .icon:before, .button.icon:before, .button.icon-left:before, .button.icon-right:before {
     display: inline-block;
-    padding: 0 0 1px 0;
+    padding: 0 0 0px 0;
     vertical-align: inherit;
     font-size: 24px;
-    line-height: 41px;
+    line-height: 42px;
     pointer-events: none; }
   .button.icon-left:before {
     float: left;
@@ -8175,7 +8175,7 @@ progress {
   min-width: 28px;
   min-height: 30px;
   font-size: 12px;
-  line-height: 26px; }
+  line-height: 27px; }
   .button-small .icon:before, .button-small.icon:before, .button-small.icon-left:before, .button-small.icon-right:before {
     font-size: 16px;
     line-height: 19px;
@@ -8186,11 +8186,11 @@ progress {
   min-width: 68px;
   min-height: 59px;
   font-size: 20px;
-  line-height: 53px; }
+  line-height: 54px; }
   .button-large .icon:before, .button-large.icon:before, .button-large.icon-left:before, .button-large.icon-right:before {
-    padding-bottom: 2px;
+    padding-bottom: 0px;
     font-size: 32px;
-    line-height: 51px; }
+    line-height: 53px; }
 
 .button-icon {
   -webkit-transition: opacity 0.1s;
@@ -8328,10 +8328,10 @@ a.button {
   .button-bar > .button .icon:before {
     line-height: 44px; }
   .button-bar > .button:first-child {
-    border-radius: 2px 0px 0px 2px; }
+    border-radius: 4px 0px 0px 4px; }
   .button-bar > .button:last-child {
     border-right-width: 1px;
-    border-radius: 0px 2px 2px 0px; }
+    border-radius: 0px 4px 4px 0px; }
 
 .button-bar > .button-small:before,
 .button-bar > .button-small .icon:before {
