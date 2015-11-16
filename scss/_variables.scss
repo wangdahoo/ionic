@@ -2,14 +2,27 @@
 // Colors
 // -------------------------------
 
+//$light:                           #fff !default;
+//$stable:                          #f8f8f8 !default;
+//$positive:                        #387ef5 !default;
+//$calm:                            #11c1f3 !default;
+//$balanced:                        #33cd5f !default;
+//$energized:                       #ffc900 !default;
+//$assertive:                       #ef473a !default;
+//$royal:                           #886aea !default;
+//$dark:                            #444 !default;
+
+// Qianka Colors
+// -------------------------------
+
 $light:                           #fff !default;
-$stable:                          #f8f8f8 !default;
-$positive:                        #387ef5 !default;
-$calm:                            #11c1f3 !default;
-$balanced:                        #33cd5f !default;
-$energized:                       #ffc900 !default;
-$assertive:                       #ef473a !default;
-$royal:                           #886aea !default;
+$stable:                          #f5f5f5 !default;
+$positive:                        #47a8ef !default;
+$calm:                            #67d7f3 !default;
+$balanced:                        #04be02 !default;
+$energized:                       #ff8800 !default;
+$assertive:                       #ec4949 !default;
+$royal:                           #9b79e0 !default;
 $dark:                            #444 !default;
 
 
@@ -22,7 +35,7 @@ $font-family-serif:               serif !default;
 $font-family-monospace:           monospace !default;
 
 $font-family-base:                $font-family-sans-serif !default;
-$font-size-base:                  14px !default;
+$font-size-base:                  12px !default;
 $font-size-large:                 18px !default;
 $font-size-small:                 11px !default;
 
