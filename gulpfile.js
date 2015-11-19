@@ -379,3 +379,10 @@ function qRequest(opts) {
   });
   return deferred.promise;
 }
+
+/* Copy dist to ../ionic-qianka */
+var gulpCopy = require('gulp-copy');
+gulp.task('ionic-qianka', function() {
+  return gulp.src('dist/**')
+    .pipe(gulpCopy('../ionic-qianka/', { prefix: 1 }));
+});

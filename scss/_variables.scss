@@ -18,13 +18,14 @@
 $light:                           #fff !default;
 $stable:                          #f5f5f5 !default;
 $positive:                        #47a8ef !default;
-$calm:                            #67d7f3 !default;
+//$calm:                            #67d7f3 !default;
+$calm:                            #aaa !default;
 $balanced:                        #04be02 !default;
 $energized:                       #ff8800 !default;
 $assertive:                       #ec4949 !default;
-$royal:                           #9b79e0 !default;
+//$royal:                           #9b79e0 !default;
+$royal:                           #666; // replace purple with grey
 $dark:                            #231e1f !default;
-
 
 // Base
 // -------------------------------
@@ -54,7 +55,8 @@ $base-color:                      #000 !default;
 $link-color:                      $positive !default;
 $link-hover-color:                darken($link-color, 15%) !default;
 
-$content-padding:                 10px !default;
+// $content-padding:                 10px !default;
+$content-padding:                 15px !default;
 
 $padding-base-vertical:           6px !default;
 $padding-base-horizontal:         12px !default;
@@ -311,7 +313,8 @@ $item-padding:                    16px !default;
 
 $item-button-font-size:           18px !default;
 $item-button-line-height:         32px !default;
-$item-icon-font-size:             32px !default;
+// $item-icon-font-size:             32px !default;
+$item-icon-font-size:             28px !default;
 $item-icon-fill-font-size:        28px !default;
 
 $item-icon-accessory-color:       #ccc !default;
@@ -321,8 +324,13 @@ $item-avatar-width:               40px !default;
 $item-avatar-height:              40px !default;
 $item-avatar-border-radius:       50% !default;
 
-$item-thumbnail-width:            80px !default;
-$item-thumbnail-height:           80px !default;
+//$item-thumbnail-width:            80px !default;
+//$item-thumbnail-height:           80px !default;
+
+// revise thumbnail width & height
+$item-thumbnail-width:            45px !default;
+$item-thumbnail-height:           45px !default;
+
 $item-thumbnail-margin:           10px !default;
 
 $item-divider-bg:                 #f5f5f5 !default;
@@ -650,9 +658,11 @@ $popup-button-min-height:         45px !default;
 
 $loading-text-color:              #fff !default;
 $loading-bg-color:                rgba(0,0,0,0.7) !default;
-$loading-padding:                 20px !default;
-$loading-border-radius:           5px !default;
-$loading-font-size:               15px !default;
+// $loading-padding:                 20px !default;
+$loading-padding:                 30px 40px!default;
+$loading-border-radius:           4px !default;
+// $loading-font-size:               15px !default;
+$loading-font-size:               12px !default;
 
 $loading-backdrop-fadein-duration:0.1s !default;
 $loading-backdrop-bg-color:       rgba(0,0,0,0.4) !default;
@@ -775,3 +785,8 @@ $z-index-click-block:             99999 !default;
 // -------------------------------
 
 $ios-statusbar-height:           20px !default;
+
+// Thin Border
+// -------------------------------
+$thin-border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACxJREFUeNpifPrk8X8GIgALiJCSlmHEp+jZ0yf/mRiIBCNTIQssnAgpBAgwAJ8RC3E8yIGBAAAAAElFTkSuQmCC') 2 round;
+
