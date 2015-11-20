@@ -69,5 +69,10 @@
     {
       "type": "MIT"
     }
-  ]
+  ],
+
+  "qianka": {
+    "version": "1.0.0",
+    "codename": "qianka-ionic"
+  }
 }
