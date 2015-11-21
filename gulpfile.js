@@ -35,7 +35,10 @@ var template = require('gulp-template');
 var uglify = require('gulp-uglify');
 var gutil = require('gulp-util');
 
-var banner = _.template(buildConfig.banner, { pkg: pkg });
+// var banner = _.template(buildConfig.banner, { pkg: pkg });
+var banner = '/*!\n' +
+  ' * ionic for qianka web app\n' +
+  ' */\n\n';
 
 var IS_RELEASE_BUILD = !!argv.release;
 if (IS_RELEASE_BUILD) {
@@ -117,7 +120,7 @@ gulp.task('bundle', [
       base: buildConfig.dist,
       cwd: buildConfig.dist
     })
-      .pipe(header(buildConfig.bundleBanner))
+      // .pipe(header(buildConfig.bundleBanner))
       .pipe(concat('ionic.bundle.min.js'))
       .pipe(gulp.dest(buildConfig.dist + '/js'));
 
@@ -168,7 +171,8 @@ gulp.task('scripts', function() {
     .pipe(footer(buildConfig.closureEnd))
     .pipe(header(banner))
     .pipe(gulp.dest(buildConfig.dist + '/js'))
-    .pipe(gulpif(IS_RELEASE_BUILD, uglify()))
+    // .pipe(gulpif(IS_RELEASE_BUILD, uglify()))
+    .pipe(uglify())
     .pipe(rename({ extname: '.min.js' }))
     .pipe(header(banner))
     .pipe(gulp.dest(buildConfig.dist + '/js'));
@@ -182,7 +186,8 @@ gulp.task('scripts-ng', function() {
     .pipe(footer(buildConfig.closureEnd))
     .pipe(header(banner))
     .pipe(gulp.dest(buildConfig.dist + '/js'))
-    .pipe(gulpif(IS_RELEASE_BUILD, uglify()))
+    // .pipe(gulpif(IS_RELEASE_BUILD, uglify()))
+    .pipe(uglify())
     .pipe(rename({ extname: '.min.js' }))
     .pipe(header(banner))
     .pipe(gulp.dest(buildConfig.dist + '/js'));
@@ -203,7 +208,8 @@ gulp.task('sass', function(done) {
     }))
     .pipe(concat('ionic.css'))
     .pipe(gulp.dest(buildConfig.dist + '/css'))
-    .pipe(gulpif(IS_RELEASE_BUILD, minifyCss()))
+    // .pipe(gulpif(IS_RELEASE_BUILD, minifyCss()))
+    .pipe(minifyCss())
     .pipe(rename({ extname: '.min.css' }))
     .pipe(gulp.dest(buildConfig.dist + '/css'))
     .on('end', done);

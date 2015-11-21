@@ -6,17 +6,7 @@
  */
 
 /*!
- * Copyright 2014 Drifty Co.
- * http://drifty.com/
- *
- * Ionic, v1.1.1
- * A powerful HTML5 mobile app framework.
- * http://ionicframework.com/
- *
- * By @maxlynch, @benjsperry, @adamdbradley <3
- *
- * Licensed under the MIT license. Please see LICENSE for more information.
- *
+ * ionic for qianka web app
  */
 
 (function() {
@@ -45863,17 +45853,7 @@ angular.module('ui.router.state')
  */
 
 /*!
- * Copyright 2014 Drifty Co.
- * http://drifty.com/
- *
- * Ionic, v1.1.1
- * A powerful HTML5 mobile app framework.
- * http://ionicframework.com/
- *
- * By @maxlynch, @benjsperry, @adamdbradley <3
- *
- * Licensed under the MIT license. Please see LICENSE for more information.
- *
+ * ionic for qianka web app
  */
 
 (function() {
