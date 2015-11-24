@@ -388,7 +388,8 @@ function qRequest(opts) {
 
 /* Copy dist to ../ionic-qianka */
 var gulpCopy = require('gulp-copy');
-gulp.task('ionic-qianka', function() {
+gulp.task('ionic-v3', function() {
+  var version = pkg.qianka.version;
   return gulp.src('dist/**')
-    .pipe(gulpCopy('../ionic-qianka/', { prefix: 1 }));
+    .pipe(gulpCopy('../v3/ionic/' + version, { prefix: 1 }));
 });
