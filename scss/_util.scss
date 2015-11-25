@@ -142,6 +142,81 @@
 }
 
 
+// 外边距工具类
+.margin {
+  margin: $content-margin;
+}
+
+.margin-top,
+.margin-vertical {
+  margin-top: $content-margin;
+}
+
+.margin-right,
+.margin-horizontal {
+  margin-right: $content-margin;
+}
+
+.margin-bottom,
+.margin-vertical {
+  margin-bottom: $content-margin;
+}
+
+.margin-left,
+.margin-horizontal {
+  margin-left: $content-margin;
+}
+
+// small
+.margin-sm {
+  margin: $content-margin-sm;
+}
+
+.margin-top-sm,
+.margin-vertical-sm {
+  margin-top: $content-margin-sm;
+}
+
+.margin-right-sm,
+.margin-horizontal-sm {
+  margin-right: $content-margin-sm;
+}
+
+.margin-bottom-sm,
+.margin-vertical-sm {
+  margin-bottom: $content-margin-sm;
+}
+
+.margin-left-sm,
+.margin-horizontal-sm {
+  margin-left: $content-margin-sm;
+}
+
+// large
+.margin-lg {
+  margin: $content-margin-lg;
+}
+
+.margin-top-lg,
+.margin-vertical-lg {
+  margin-top: $content-margin-lg;
+}
+
+.margin-right-lg,
+.margin-horizontal-lg {
+  margin-right: $content-margin-lg;
+}
+
+.margin-bottom-lg,
+.margin-vertical-lg {
+  margin-bottom: $content-margin-lg;
+}
+
+.margin-left-lg,
+.margin-horizontal-lg {
+  margin-left: $content-margin-lg;
+}
+
 /**
  * Scrollable iFrames
  * --------------------------------------------------

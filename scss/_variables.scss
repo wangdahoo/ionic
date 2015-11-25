@@ -71,6 +71,10 @@ $border-radius-base:              4px !default;
 $border-radius-large:             6px !default;
 $border-radius-small:             3px !default;
 
+// 定义外边距
+$content-margin:                  15px !default;
+$content-margin-sm:               10px !default;
+$content-margin-lg:               20px !default;
 
 // Content
 // -------------------------------
@@ -131,9 +135,13 @@ $button-positive-active-border:   darken($positive, 10%) !default;
 
 $button-calm-bg:                  $calm !default;
 $button-calm-text:                #fff !default;
-$button-calm-border:              darken($calm, 10%) !default;
-$button-calm-active-bg:           darken($calm, 10%) !default;
-$button-calm-active-border:       darken($calm, 10%) !default;
+//$button-calm-border:              darken($calm, 10%) !default;
+//$button-calm-active-bg:           darken($calm, 10%) !default;
+//$button-calm-active-border:       darken($calm, 10%) !default;
+
+$button-calm-border:              $calm !default;
+$button-calm-active-bg:           $calm !default;
+$button-calm-active-border:       $calm !default;
 
 $button-assertive-bg:             $assertive !default;
 $button-assertive-text:           #fff !default;
@@ -643,8 +651,10 @@ $sheet-options-border-color:      #d1d3d6 !default;
 //$popup-width:                     250px !default;
 $popup-width:                     280px !default;
 $popup-enter-animation:           superScaleIn !default;
+//$popup-enter-animation-duration:  0.2s !default;
+//$popup-leave-animation-duration:  0.1s !default;
 $popup-enter-animation-duration:  0.2s !default;
-$popup-leave-animation-duration:  0.1s !default;
+$popup-leave-animation-duration:  0.2s !default;
 
 //$popup-border-radius:             0px !default;
 //$popup-background-color:          rgba(255,255,255,0.9) !default;

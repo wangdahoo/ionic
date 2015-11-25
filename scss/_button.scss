@@ -92,7 +92,11 @@
   &.button-calm {
     @include button-style($button-calm-bg, $button-calm-border, $button-calm-active-bg, $button-calm-active-border, $button-calm-text);
     @include button-clear($button-calm-bg);
-    @include button-outline($button-calm-bg);
+    // @include button-outline($button-calm-bg);
+    @include button-outline(#ccc, #aaa);
+
+    // 灰色按钮加border
+    border-width: 1px;
   }
 
   &.button-assertive {
