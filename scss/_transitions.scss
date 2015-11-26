@@ -4,8 +4,8 @@
 
 $ios-transition-duration:              500ms !default;
 $ios-transition-timing-function:       cubic-bezier(.36, .66, .04, 1) !default;
-$ios-transition-container-bg-color:    #000 !default;
-
+// $ios-transition-container-bg-color:    #000 !default;
+$ios-transition-container-bg-color:    #fff !default;
 
 [nav-view-transition="ios"] {
 
