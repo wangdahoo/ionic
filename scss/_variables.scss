@@ -173,11 +173,11 @@ $button-dark-border:              #111 !default;
 $button-dark-active-bg:           #262626 !default;
 $button-dark-active-border:       #000 !default;
 
-$button-default-bg:               $button-stable-bg !default;
-$button-default-text:             $button-stable-text !default;
-$button-default-border:           $button-stable-border !default;
-$button-default-active-bg:        $button-stable-active-bg !default;
-$button-default-active-border:    $button-stable-active-border !default;
+$button-default-bg:               #e3e3e3 !default;
+$button-default-text:             #444 !default;
+$button-default-border:           darken(#e3e3e3, 8%) !default;
+$button-default-active-bg:        darken(#e3e3e3, 8%) !default;
+$button-default-active-border:    darken(#e3e3e3, 8%) !default;
 
 
 // Bars
@@ -315,12 +315,16 @@ $tabs-striped-border-width:       2px !default;
 // Items
 // -------------------------------
 
-$item-font-size:                  16px !default;
+//$item-font-size:                  16px !default;
+$item-font-size:                  14px !default;
 $item-border-width:               1px !default;
-$item-padding:                    16px !default;
+//$item-padding:                    16px !default;
+$item-padding:                    10px !default;
 
-$item-button-font-size:           18px !default;
-$item-button-line-height:         32px !default;
+// $item-button-font-size:           18px !default;
+$item-button-font-size:           13px !default;
+// $item-button-line-height:         32px !default;
+$item-button-line-height:         26px !default;
 // $item-icon-font-size:             32px !default;
 $item-icon-font-size:             28px !default;
 $item-icon-fill-font-size:        28px !default;
