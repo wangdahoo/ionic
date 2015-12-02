@@ -5472,19 +5472,19 @@ ion-tabs.tabs-color-active-dark .tab-item {
   .popup-container.popup-hidden .popup {
     -webkit-animation-name: popupOut;
     animation-name: popupOut;
-    -webkit-animation-duration: 0.2s;
-    animation-duration: 0.2s;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both; }
   .popup-container.active .popup {
     -webkit-animation-name: popupIn;
     animation-name: popupIn;
-    -webkit-animation-duration: 0.2s;
-    animation-duration: 0.2s;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both; }
   .popup-container .popup {
@@ -9002,8 +9002,8 @@ a.button {
     transform: translateY(0);
     opacity: 1; }
   to {
-    -webkit-transform: translateY(20%);
-    transform: translateY(20%);
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%);
     opacity: 0; } }
 
 @keyframes popupOut {
