@@ -3844,7 +3844,7 @@ a.subdued {
   position: absolute;
   right: 0;
   left: 0;
-  z-index: 5000 !important;
+  z-index: 9;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -3967,7 +3967,7 @@ a.subdued {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 5000 !important;
+    z-index: 0;
     overflow: hidden;
     margin: 0 10px;
     min-width: 30px;
@@ -3985,7 +3985,7 @@ a.subdued {
   .bar .title a {
     color: inherit; }
   .bar .button {
-    z-index: 5001 !important;
+    z-index: 1;
     padding: 0 8px;
     min-width: initial;
     min-height: 31px;
@@ -4287,7 +4287,7 @@ a.subdued {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 5000 !important; }
+  z-index: 9; }
 
 .bar .back-button.hide,
 .bar .buttons .hide {
@@ -5902,7 +5902,7 @@ a.item-content {
   -moz-align-items: center;
   align-items: center;
   position: absolute;
-  top: 0;
+  top: 1px;
   height: 100%;
   font-size: 28px; }
   .item-icon-left .icon:before,

@@ -316,7 +316,8 @@ a.item-content {
   @include display-flex();
   @include align-items(center);
   position: absolute;
-  top: 0;
+  // top: 0;
+  top: 1px; // 重置icon位置
   height: 100%;
   font-size: $item-icon-font-size;
 
