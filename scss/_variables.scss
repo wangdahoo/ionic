@@ -663,7 +663,7 @@ $popup-leave-animation-duration:  0.25s !default;
 //$popup-border-radius:             0px !default;
 //$popup-background-color:          rgba(255,255,255,0.9) !default;
 
-$popup-border-radius:             4px !default;
+$popup-border-radius:             10px !default;
 $popup-background-color:          #fff !default;
 
 //$popup-button-border-radius:      2px !default;
@@ -677,7 +677,9 @@ $popup-button-min-height:         50px !default;
 // -------------------------------
 
 $loading-text-color:              #fff !default;
-$loading-bg-color:                rgba(0,0,0,0.7) !default;
+//$loading-bg-color:                rgba(0,0,0,0.7) !default;
+$loading-bg-color:                rgba(0,0,0,0.85) !default;
+
 $loading-padding:                 20px !default;
 $loading-border-radius:           4px !default;
 // $loading-font-size:               15px !default;
@@ -685,7 +687,7 @@ $loading-font-size:               12px !default;
 
 $loading-backdrop-fadein-duration:0.1s !default;
 // $loading-backdrop-bg-color:       rgba(0,0,0,0.4) !default;
-$loading-backdrop-bg-color:       rgba(#231e1f,0.8) !default;
+$loading-backdrop-bg-color:       rgba(0,0,0,0.5) !default;
 
 // Badges
 // -------------------------------
