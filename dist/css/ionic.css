@@ -5568,7 +5568,7 @@ ion-tabs.tabs-color-active-dark .tab-item {
     min-height: 50px;
     border-radius: 4px;
     line-height: 30px;
-    margin-right: 5px;
+    margin-right: 10px;
     font-size: 14px !important; }
     .popup-buttons .button:last-child {
       margin-right: 0px; }
