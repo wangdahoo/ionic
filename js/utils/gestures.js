@@ -27,9 +27,7 @@
     // its native behavior. this doesnt prevent the scrolling,
     // but cancels the contextmenu, tap highlighting etc
     // set to false to disable this
-    // stop_browser_behavior: 'disable-user-behavior'
-    // By Tom - 2015.01.18
-    stop_browser_behavior: false
+    stop_browser_behavior: 'disable-user-behavior'
   };
 
   // detect touchevents
